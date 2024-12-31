@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cloud_phone_device_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/cloud_phone_device_buy"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="58dp"
+            android:layout_marginBottom="58dp"
+            android:layout_marginRight="58dp"
+            android:background="@drawable/button_background_seni"
+            android:text="@string/sq_buy_cloud_phone"
+            android:textColor="@android:color/white"
+            android:layout_gravity="bottom"/>
+
+</FrameLayout>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_button_background_my_2">
+
+    <ImageView
+        android:id="@+id/imageView46"
+        android:layout_width="match_parent"
+        android:layout_height="376dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/dialog_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="设备信息"
+        android:textColor="#ff333333"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:text="游戏挂机游戏挂机挂机"
+        android:textColor="#ff333333"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView56" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:src="@mipmap/dialog_2"
+        app:layout_constraintBottom_toBottomOf="@+id/textView57"
+        app:layout_constraintStart_toEndOf="@+id/textView57"
+        app:layout_constraintTop_toTopOf="@+id/textView57" />
+
+
+    <Button
+        android:id="@+id/bottom"
+        android:layout_width="68dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/gradient_button"
+        android:text="续费"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textView57"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView57" />
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="ID：1231241"
+        android:textColor="#ff666666"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/textView57"
+        app:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:src="@mipmap/dialog_3"
+        app:layout_constraintBottom_toBottomOf="@+id/textView58"
+        app:layout_constraintStart_toEndOf="@+id/textView58"
+        app:layout_constraintTop_toTopOf="@+id/textView58" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="所在分组："
+        android:textColor="#ff999999"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/textView58"
+        app:layout_constraintTop_toBottomOf="@+id/textView58" />
+
+
+    <Button
+        android:layout_width="51dp"
+        android:layout_height="24dp"
+        android:background="@drawable/rounded_background_dialog"
+        android:drawableRight="@mipmap/dialog_4"
+        android:text="游戏"
+        app:layout_constraintBottom_toBottomOf="@+id/textView59"
+        app:layout_constraintStart_toEndOf="@+id/textView59"
+        app:layout_constraintTop_toTopOf="@+id/textView59" />
+
+    <TextView
+        android:id="@+id/textView60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="剩余时长："
+        android:textColor="#ff999999"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/textView59"
+        app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textColor="#ff333333"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView60"
+        app:layout_constraintStart_toEndOf="@+id/textView60"
+        app:layout_constraintTop_toTopOf="@+id/textView60" />
+
+    <ImageView
+        android:id="@+id/imageView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:src="@mipmap/dialog_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottom" />
+
+    <TextView
+        android:id="@+id/textView61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="19dp"
+        android:text="套餐名称"
+        android:textColor="#ff0a9cf9"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView47"
+        app:layout_constraintTop_toTopOf="@+id/imageView47" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="Android8"
+        android:textColor="#ff0a9cf9"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView61"
+        app:layout_constraintStart_toEndOf="@+id/textView61"
+        app:layout_constraintTop_toTopOf="@+id/textView61" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/unisdk_dp_80"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView60">
+
+        <!-- 第一张图片 -->
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@mipmap/my_6"
+            app:layout_constraintEnd_toStartOf="@+id/imageView16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- 第一张图片的文本 -->
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="多路直播"
+            android:textColor="#ff333333"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView15"
+            app:layout_constraintStart_toStartOf="@+id/imageView15"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+        <!-- 第二张图片 -->
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@mipmap/my_6"
+            app:layout_constraintEnd_toStartOf="@+id/imageView17"
+            app:layout_constraintStart_toEndOf="@+id/imageView15"
+            app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+        <!-- 第二张图片的文本 -->
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="多路直播"
+            android:textColor="#ff333333"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView16"
+            app:layout_constraintStart_toStartOf="@+id/imageView16"
+            app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+        <!-- 第三张图片 -->
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@mipmap/my_6"
+            app:layout_constraintEnd_toStartOf="@+id/imageView18"
+            app:layout_constraintStart_toEndOf="@+id/imageView16"
+            app:layout_constraintTop_toTopOf="@+id/imageView16" />
+
+        <!-- 第三张图片的文本 -->
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="多路直播"
+            android:textColor="#ff333333"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView17"
+            app:layout_constraintStart_toStartOf="@+id/imageView17"
+            app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+
+        <!-- 第四张图片 -->
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@mipmap/my_6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView17"
+            app:layout_constraintTop_toTopOf="@+id/imageView17" />
+
+        <!-- 第四张图片的文本 -->
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="多路直播"
+            android:textColor="#ff333333"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView18"
+            app:layout_constraintStart_toStartOf="@+id/imageView18"
+            app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

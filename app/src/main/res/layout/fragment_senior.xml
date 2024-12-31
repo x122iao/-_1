@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="10000dp">
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="云机"
+            android:textColor="#ff333333"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/base_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:src="@drawable/base_1"
+            app:layout_constraintBottom_toBottomOf="@+id/textView42"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView42" />
+
+
+        <Button
+            android:id="@+id/bottom"
+            android:layout_width="68dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/gradient_button"
+            android:text="续费"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/textView42"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView42" />
+
+        <!-- 第一张图片 -->
+        <ImageView
+            android:id="@+id/imageView35"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="22dp"
+            android:src="@mipmap/foun_1"
+            app:layout_constraintEnd_toStartOf="@+id/imageView36"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/base_1" />
+
+        <!-- 第二张图片 -->
+        <ImageView
+            android:id="@+id/imageView36"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:src="@mipmap/foun_2"
+            app:layout_constraintEnd_toStartOf="@+id/imageView37"
+            app:layout_constraintStart_toEndOf="@+id/imageView35"
+            app:layout_constraintTop_toTopOf="@+id/imageView35" />
+
+        <!-- 第三张图片 -->
+        <ImageView
+            android:id="@+id/imageView37"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:src="@mipmap/foun_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView36"
+            app:layout_constraintTop_toTopOf="@+id/imageView36" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:src="@mipmap/foun_4"
+            app:layout_constraintEnd_toEndOf="@+id/imageView37"
+            app:layout_constraintStart_toStartOf="@+id/imageView37"
+            app:layout_constraintTop_toBottomOf="@+id/imageView37" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_background_foun"
+            android:paddingBottom="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView35">
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="基础版，xxxxxxx"
+                android:textColor="#ff6773a6"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:src="@mipmap/seni_1"
+                app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView43"
+                app:layout_constraintWidth_percent="0.25" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="8核"
+                android:textColor="#ff4a599c"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/seni_1"
+                app:layout_constraintEnd_toStartOf="@+id/imageView3"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                app:layout_constraintWidth_percent="0.25" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1080P"
+                android:textColor="#ff4a599c"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                app:layout_constraintStart_toStartOf="@+id/imageView4"
+                app:layout_constraintTop_toTopOf="@+id/textView45" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/seni_1"
+                app:layout_constraintEnd_toStartOf="@+id/imageView4"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                app:layout_constraintWidth_percent="0.25" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="32G储存"
+                android:textColor="#ff4a599c"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView3"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/textView46" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/seni_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView3"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                app:layout_constraintWidth_percent="0.25" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4G运存"
+                android:textColor="#ff4a599c"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/textView45" />
+
+
+            <ImageView
+                android:id="@+id/imageView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="14dp"
+                android:src="@mipmap/seni_5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="蜡笔小新正式的通知你：明天要帮黑猫警长大战格格巫..."
+                android:textColor="#ff333333"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView38"
+                app:layout_constraintTop_toTopOf="@+id/imageView38" />
+
+            <ImageView
+                android:id="@+id/imageView39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="8dp"
+                android:src="@mipmap/seni_5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView38" />
+
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="蜡笔小新正式的通知你：明天要帮黑猫警长大战格格巫..."
+                android:textColor="#ff333333"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView39"
+                app:layout_constraintTop_toTopOf="@+id/imageView39" />
+
+            <ImageView
+                android:id="@+id/imageView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="8dp"
+                android:src="@mipmap/seni_5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView39" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="蜡笔小新正式的通知你：明天要帮黑猫警长大战格格巫..."
+                android:textColor="#ff333333"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView40"
+                app:layout_constraintTop_toTopOf="@+id/imageView40" />
+
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="4dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="27dp"
+                android:background="@drawable/rounded_background_sheni_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView40" />
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="套餐选择"
+                android:textColor="#ff333333"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view3"
+                app:layout_constraintStart_toEndOf="@+id/view3"
+                app:layout_constraintTop_toTopOf="@+id/view3" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="订购须知"
+                android:textColor="#ff333333"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/recy"
+                app:layout_constraintTop_toBottomOf="@+id/recy" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="12dp"
+                android:text="1、基础套餐每个周期内仅生效一个，重复购买基础套餐将不断累计可用时长，套餐内用量不足时请订购加油包，以确保您可以正常访问网络。
+2、由于运营商系统流量统计延迟，办理后流量展示会存在一定的滞后时间。
+3、订购套餐时请仔细核对充值卡号及套餐包有效期，订购后不可改退。"
+                android:textColor="#ff666666"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="16dp"
+                android:text="数量："
+                android:textColor="#ff333333"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+            <ImageView
+                android:id="@+id/imageView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="#F5F5F5"
+                android:padding="6dp"
+                android:src="@mipmap/seni_6"
+                app:layout_constraintBottom_toBottomOf="@+id/textView52"
+                app:layout_constraintStart_toEndOf="@+id/textView52"
+                app:layout_constraintTop_toTopOf="@+id/textView52" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="44dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="2dp"
+                android:background="#F5F5F5"
+                android:gravity="center"
+                android:text="1"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView41"
+                app:layout_constraintStart_toEndOf="@+id/imageView41"
+                app:layout_constraintTop_toTopOf="@+id/imageView41" />
+
+
+            <ImageView
+                android:id="@+id/imageView42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:background="#F5F5F5"
+                android:padding="6dp"
+                android:src="@mipmap/seni_7"
+                app:layout_constraintBottom_toBottomOf="@+id/textView52"
+                app:layout_constraintStart_toEndOf="@+id/textView"
+                app:layout_constraintTop_toTopOf="@+id/textView52" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合计："
+                android:textColor="#ff333333"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/textView53"
+                app:layout_constraintTop_toTopOf="@+id/textView53" />
+
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="26dp"
+                android:text="¥1元"
+                android:textColor="#ffff4f42"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView42" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="26dp"
+                android:background="@drawable/button_background_seni"
+                android:text="新增云手机"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+
+            <ImageView
+                android:id="@+id/imageView43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/ic_unselected"
+                app:layout_constraintStart_toStartOf="@+id/button2"
+                app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+
+            <TextView
+                android:id="@+id/tvAgreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="阅读并确认《自动续费协议》和 《购买协议》。"
+                android:textColor="#ff999999"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView43"
+                app:layout_constraintStart_toEndOf="@+id/imageView43"
+                app:layout_constraintTop_toTopOf="@+id/imageView43" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

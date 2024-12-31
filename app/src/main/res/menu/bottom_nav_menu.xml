@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@mipmap/information"
+        android:title="资讯"/>
+<!--    <item-->
+<!--        android:id="@+id/navigation_explore"-->
+<!--        android:icon="@drawable/acc_explore"-->
+<!--        android:title="探索"/>-->
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@mipmap/equipment"
+        android:title="云设备"/>
+<!--    <item-->
+<!--        android:id="@+id/navigation_information"-->
+<!--        android:icon="@drawable/acc_information"-->
+<!--        android:title="资讯"/>-->
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@mipmap/my"
+        android:title="我的"/>
+</menu>

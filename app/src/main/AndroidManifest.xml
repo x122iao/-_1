@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/login_1"
+        android:roundIcon="@mipmap/login_1"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.KotlinOkHttp"
+        android:networkSecurityConfig="@xml/network_security_config"
+        tools:replace="android:allowBackup, android:networkSecurityConfig"
+        android:label="@string/app_name"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".ui.view.activity.MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+
+        </activity>
+
+        <activity android:name=".ui.view.activity.SetupActivity"/>
+        <activity android:name=".ui.view.activity.AccountSecurityActivity"/>
+        <activity android:name=".ui.view.activity.ReviseActivity"/>
+        <activity android:name=".ui.view.activity.RebindingActivity_1"/>
+        <activity android:name=".ui.view.activity.UpdateActivity"/>
+        <activity android:name=".ui.view.activity.VerifyUpdateActivity"/>
+        <activity android:name=".ui.view.activity.AboutActivity"/>
+        <activity android:name=".ui.view.activity.AuthorizationActivity"/>
+        <activity android:name=".ui.view.activity.AuthorizationRecordsActivity"/>
+        <activity android:name=".ui.view.activity.CertificationCertification"/>
+        <activity android:name=".ui.view.activity.HelpActivity"/>
+        <activity android:name=".ui.view.activity.FeedbackActivity"/>
+        <activity android:name=".ui.view.activity.AgreementActivity"/>
+        <activity android:name=".ui.view.activity.QuickloginActivity"/>
+        <activity android:name=".ui.view.activity.LoginActivity"/>
+        <activity android:name=".ui.view.activity.LoginActivity_1"/>
+        <activity android:name=".ui.view.activity.RetrievepasswordActivity"/>
+        <activity android:name=".ui.view.activity.RenewalActivity"/>
+        <activity android:name=".base.BaseActivity_buy"/>
+        <activity android:name=".ui.view.activity.RebindingActivity"/>
+
+
+
+
+
+
+
+
+        <provider
+            android:name=".utils.MyFileProvider"
+            android:authorities="com.tongshang.cloudphone.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+
+
+
+    </application>
+
+</manifest>

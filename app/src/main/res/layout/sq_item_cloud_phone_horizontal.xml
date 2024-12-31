@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cloud_horizontal_device"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="25dp">
+
+    <ImageView
+        android:id="@+id/cloud_phone_img_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/cloud_phone_device"
+        android:layout_width="306dp"
+        android:layout_height="545dp"
+        android:background="@mipmap/ic_launcher"
+        android:padding="10dp"
+        android:visibility="visible">
+
+        <com.sq.sdk.cloudgame.widget.RCImageView
+            android:id="@+id/cloud_phone_game_screen_shot"
+            android:layout_width="286dp"
+            android:layout_height="477dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            app:round_corner_top_left="30dp"
+            app:round_corner_top_right="30dp"/>
+
+        <!-- 我的设备1 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cloud_phone_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sq_my_device"
+                android:textColor="#FFFFFFFF"
+                android:textSize="22dp" />
+
+
+            <TextView
+                android:id="@+id/cloud_phone_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cloud_phone_name"
+                android:textColor="#FFFFFFFF"
+                android:layout_marginTop="5dp"
+                android:textSize="10dp" />
+            <!--                剩余时间-->
+            <TextView
+                android:id="@+id/cloud_phone_left_time"
+                android:layout_width="172dp"
+                android:layout_height="22dp"
+                android:layout_below="@+id/cloud_phone_id"
+                android:layout_marginTop="5dp"
+                android:text="@string/sq_left_time"
+                android:textColor="#CCFFFFFF"
+                android:textSize="16dp" />
+
+
+            <ImageView
+                android:id="@+id/cloud_phone_name_edit"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="26dp"
+                android:src="@mipmap/ic_launcher" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/cloud_phone_refresh"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@mipmap/ic_launcher"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sq_refresh"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#FF000000"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/cloud_phone_reboot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@mipmap/ic_launcher"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="重启"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#FF000000"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cloud_phone_recharge"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@mipmap/ic_launcher"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/sq_recharge"
+                    android:textColor="#FF000000"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>
+

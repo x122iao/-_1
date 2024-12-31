@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/unisdk_dp_10"
+            android:layout_marginEnd="@dimen/unisdk_dp_16"
+            android:src="@mipmap/my_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/unisdk_dp_20"
+            android:src="@mipmap/my_3"
+            app:layout_constraintEnd_toStartOf="@+id/imageView12"
+            app:layout_constraintTop_toTopOf="@+id/imageView12" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/unisdk_dp_20"
+            android:layout_marginTop="@dimen/unisdk_dp_8"
+            android:src="@mipmap/my_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/unisdk_dp_14"
+            android:layout_marginTop="@dimen/unisdk_dp_12"
+            android:text="未登录"
+            android:textColor="#ff333333"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView11"
+            app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/unisdk_dp_8"
+            android:text="设备：请登录"
+            android:textColor="#ff333333"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <Button
+            android:layout_width="@dimen/unisdk_dp_98"
+            android:layout_height="@dimen/unisdk_dp_32"
+            android:layout_marginTop="@dimen/unisdk_dp_36"
+            android:layout_marginEnd="@dimen/unisdk_dp_16"
+            android:text="我的云手机"
+            android:background="@drawable/gradient_button"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="@dimen/unisdk_dp_166"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/unisdk_dp_16"
+            android:layout_marginTop="@dimen/unisdk_dp_16"
+            android:src="@mipmap/my_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+        <ImageView
+            android:id="@+id/Im_buy"
+            android:layout_width="@dimen/unisdk_dp_166"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/unisdk_dp_16"
+            android:src="@mipmap/my_5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/unisdk_dp_68"
+            android:layout_marginTop="@dimen/unisdk_dp_14"
+            android:text="5GB"
+            android:textColor="#ff005cf8"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/imageView14"
+            app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/unisdk_dp_20"
+            android:text="剩余100%"
+            android:textColor="#ff6d7ea8"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/imageView14"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <Button
+            android:layout_width="@dimen/unisdk_dp_64"
+            android:layout_height="@dimen/unisdk_dp_22"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/gradient_button_my_1"
+            android:text="上传文件"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+            app:layout_constraintStart_toStartOf="@+id/imageView14" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/unisdk_dp_16"
+            android:layout_marginTop="@dimen/unisdk_dp_20"
+            android:layout_marginEnd="@dimen/unisdk_dp_16"
+            android:layout_marginBottom="@dimen/unisdk_dp_12"
+            android:background="@drawable/rounded_button_background_my_2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView14">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/unisdk_dp_12"
+                android:layout_marginTop="@dimen/unisdk_dp_11"
+                android:text="常用功能"
+                android:textColor="#ff333333"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/unisdk_dp_14"
+                android:layout_marginTop="@dimen/unisdk_dp_12"
+                android:src="@mipmap/my_6"
+                app:layout_constraintStart_toStartOf="@+id/textView7"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/unisdk_dp_2"
+                android:text="多路直播"
+                android:textColor="#ff333333"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView15"
+                app:layout_constraintStart_toStartOf="@+id/imageView15"
+                app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/unisdk_dp_49"
+                android:src="@mipmap/my_7"
+                app:layout_constraintStart_toEndOf="@+id/imageView15"
+                app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="云机授权"
+                android:textColor="#ff333333"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView16"
+                app:layout_constraintStart_toStartOf="@+id/imageView16"
+                app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/unisdk_dp_49"
+                android:src="@mipmap/my_8"
+                app:layout_constraintStart_toEndOf="@+id/imageView16"
+                app:layout_constraintTop_toTopOf="@+id/imageView16" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="批量操作"
+                android:textColor="#ff333333"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView17"
+                app:layout_constraintStart_toStartOf="@+id/imageView17"
+                app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/unisdk_dp_49"
+                android:src="@mipmap/my_9"
+                app:layout_constraintStart_toEndOf="@+id/imageView17"
+                app:layout_constraintTop_toTopOf="@+id/imageView17" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的订单"
+                android:textColor="#ff333333"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView19"
+                app:layout_constraintStart_toStartOf="@+id/imageView19"
+                app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/unisdk_dp_22"
+                android:src="@mipmap/my_0"
+                app:layout_constraintStart_toStartOf="@+id/imageView15"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实名认证"
+                android:textColor="#ff333333"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView18"
+                app:layout_constraintStart_toStartOf="@+id/imageView18"
+                app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/my_11"
+                app:layout_constraintStart_toStartOf="@+id/imageView16"
+                app:layout_constraintTop_toTopOf="@+id/imageView18" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="反馈帮助"
+                android:textColor="#ff333333"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView20"
+                app:layout_constraintStart_toStartOf="@+id/imageView20"
+                app:layout_constraintTop_toBottomOf="@+id/imageView20" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/unisdk_dp_170"
+                android:layout_marginStart="@dimen/unisdk_dp_12"
+                android:layout_marginTop="@dimen/unisdk_dp_20"
+                android:layout_marginEnd="@dimen/unisdk_dp_12"
+                android:background="@mipmap/my_12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/unisdk_dp_8"
+                    android:layout_marginTop="@dimen/unisdk_dp_42"
+                    android:layout_marginEnd="@dimen/unisdk_dp_8"
+                    android:layout_marginBottom="@dimen/unisdk_dp_8"
+                    android:background="@drawable/rounded_button_background_my_8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/unisdk_dp_10"
+                        android:layout_marginTop="@dimen/unisdk_dp_14"
+                        android:src="@mipmap/my_13"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/unisdk_dp_4"
+                        android:text="金币余额："
+                        android:textColor="#fff94501"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+                        app:layout_constraintStart_toEndOf="@+id/imageView21" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#fff94501"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+                        app:layout_constraintStart_toEndOf="@+id/textView12"
+                        app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+                    <Button
+                        android:layout_width="@dimen/unisdk_dp_70"
+                        android:layout_height="@dimen/unisdk_dp_24"
+                        android:layout_marginTop="@dimen/unisdk_dp_10"
+                        android:layout_marginEnd="@dimen/unisdk_dp_10"
+                        android:background="@drawable/gradient_button_my_2"
+                        android:text="赚金币"
+                        android:textColor="#ffffffff"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout"
+                        android:layout_width="@dimen/unisdk_dp_130"
+                        android:layout_height="@dimen/unisdk_dp_62"
+                        android:layout_marginStart="@dimen/unisdk_dp_10"
+                        android:layout_marginTop="@dimen/unisdk_dp_16"
+                        android:background="@drawable/rounded_background_my_3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+                        <ImageView
+                            android:id="@+id/imageView23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/unisdk_dp_8"
+                            android:src="@mipmap/my_14"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/unisdk_dp_6"
+                            android:layout_marginTop="@dimen/unisdk_dp_4"
+                            android:text="每日签到"
+                            android:textColor="#ff3851ff"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/imageView23"
+                            app:layout_constraintTop_toTopOf="@+id/imageView23" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/unisdk_dp_4"
+                            android:text="未完成  >"
+                            android:textColor="#ff6d7ea8"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toStartOf="@+id/textView14"
+                            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="@dimen/unisdk_dp_130"
+                        android:layout_height="@dimen/unisdk_dp_62"
+                        android:layout_marginEnd="@dimen/unisdk_dp_10"
+                        android:background="@drawable/rounded_background_my_4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/constraintLayout">
+
+                        <ImageView
+                            android:id="@+id/imageView24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/unisdk_dp_8"
+                            android:src="@mipmap/my_15"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/unisdk_dp_6"
+                            android:layout_marginTop="@dimen/unisdk_dp_4"
+                            android:text="激励任务"
+                            android:textColor="#B59A6D"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/imageView24"
+                            app:layout_constraintTop_toTopOf="@+id/imageView24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/unisdk_dp_4"
+                            android:text="做任务得金币  >"
+                            android:textColor="#B59A6D"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toStartOf="@+id/textView15"
+                            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/unisdk_dp_12"
+                android:layout_marginTop="@dimen/unisdk_dp_12"
+                android:layout_marginEnd="@dimen/unisdk_dp_12"
+                android:layout_marginBottom="@dimen/unisdk_dp_12"
+                android:scaleType="fitXY"
+                android:src="@mipmap/my_16"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

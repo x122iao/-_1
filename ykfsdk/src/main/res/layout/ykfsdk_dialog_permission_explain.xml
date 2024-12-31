@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lay_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/dialog_white_shape_radius10"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="麦克风权限使用说明"
+            android:textColor="@color/ykfsdk_color_333333"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="使用您的麦克风权限，用于向您提供录制音频功能，便于与客服沟通"
+            android:textColor="@color/ykfsdk_color_666666"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/dialog_white_shape_radius10"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="相机权限使用说明"
+            android:textColor="@color/ykfsdk_color_333333"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="使用您的相机，用于帮助您记录产品问题与客服进行沟通"
+            android:textColor="@color/ykfsdk_color_666666"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/dialog_white_shape_radius10"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="照片和视频权限使用说明"
+            android:textColor="@color/ykfsdk_color_333333"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_per_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="使用您的照片和视频功能，用于读取图片和视频与客服进行问题沟通"
+            android:textColor="@color/ykfsdk_color_666666"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

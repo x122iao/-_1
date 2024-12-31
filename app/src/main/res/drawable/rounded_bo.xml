@@ -1,0 +1,9 @@
+<!-- res/drawable/rounded_top.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/white" /> <!-- 设置背景颜色 -->
+    <corners
+        android:topLeftRadius="0dp"
+    android:topRightRadius="0dp"
+    android:bottomLeftRadius="12dp"
+    android:bottomRightRadius="12dp" />
+</shape>

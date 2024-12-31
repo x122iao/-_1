@@ -1,0 +1,39 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        // 阿里云云效仓库：https://maven.aliyun.com/mvn/guide
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        // 华为开源镜像：https://mirrors.huaweicloud.com
+        maven { url 'https://repo.huaweicloud.com/repository/maven' }
+
+        //友盟maven仓库
+        maven { url 'https://repo1.maven.org/maven2/' }
+
+
+
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        // 阿里云云效仓库：https://maven.aliyun.com/mvn/guide
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        // 华为开源镜像：https://mirrors.huaweicloud.com
+        maven { url 'https://repo.huaweicloud.com/repository/maven' }
+
+        maven { url 'https://repo1.maven.org/maven2/' }
+
+
+
+    }
+}
+rootProject.name = "KotlinOkHttp"
+include ':app'
+include ':ykfsdk'

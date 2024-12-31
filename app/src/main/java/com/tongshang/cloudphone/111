@@ -1,0 +1,311 @@
+通用参数   ？String 品牌、？String token、？String 版本、String 语言、oaid、String 手机号。。。
+验证吗登录
+《- 验证码、手机号、渠道、
+-》 账户名字、头像链接、是否会员、新老用户、手机号、token、（会员状态）到期时间、会员类型、
+
+密码登录
+ 《— 手机号、验证码、渠道、密码
+ -》 账户名字、头像链接、是否会员、新老用户、手机号、token、（会员状态）到期时间、会员类型、
+
+ 忘记密码
+ 《- 手机号、验证码、新密码
+ -》 code
+
+ 旧密码修改
+ 《- 手机号、旧密码、新密码
+ -》 code
+
+ 注销账户
+ 《- null
+ -》 code
+
+
+//package com.tongshang.cloudphone.ui.view.fragment
+//
+//import android.annotation.SuppressLint
+//import android.content.Context
+//import android.content.Intent
+//import android.text.TextUtils
+//import android.view.View
+//import androidx.viewpager2.widget.ViewPager2
+//import com.sq.sdk.cloudgame.*
+//import com.tongshang.cloudphone.R
+//import com.tongshang.cloudphone.base.BaseActivity_buy
+//import com.tongshang.cloudphone.base.BaseFragment
+//import com.tongshang.cloudphone.cloudphone.AppConst
+//import com.tongshang.cloudphone.cloudphone.CpSdkApiModel
+//import com.tongshang.cloudphone.databinding.FragmentEquipentBinding
+//import com.tongshang.cloudphone.ui.adapter.CustomAdapter
+//import com.tongshang.cloudphone.utils.CustomPopWindow
+//import org.json.JSONException
+//import org.json.JSONObject
+//
+//
+///**
+// * @author: z2660
+// * @date: 2024/12/3
+// *
+// * 云设备
+// */
+//class EquipmentFragment : BaseFragment() {
+//
+//    private lateinit var _binding: FragmentEquipentBinding
+//    private var popWindow: CustomPopWindow? = null
+//    private var isImageOne = true // 默认为图片1
+//
+//    override fun getLayoutView(): Int {
+//        return R.layout.fragment_equipent
+//    }
+//
+//    @SuppressLint("NotifyDataSetChanged")
+//    override fun initView(rootView: View) {
+//
+//        // 初始化 ViewBinding
+//        _binding = FragmentEquipentBinding.bind(rootView)
+//
+//        icon(false)
+//
+//        notifyScreenshot()
+//
+//
+//        // 使用 binding 设置点击事件
+//        _binding.imageView.setOnClickListener { toggleImageViews() }
+//        _binding.textView.setOnClickListener { toggleImageViews() }
+//
+//        _binding.button.setOnClickListener {
+//            startActivity(Intent(requireContext(), BaseActivity_buy::class.java))
+//        }
+//
+//        _binding.imageView3.setOnClickListener {
+//            BottomSheetFragment().show(parentFragmentManager, BottomSheetFragment().tag)
+//        }
+//
+//        _binding.textView2.setOnClickListener {
+//            notifyScreenshot()
+//            _binding.viewPager2.adapter?.notifyDataSetChanged()
+//            Log.e("zhangxiaodong", "11111111111111111111")
+//
+//        }
+//        _binding.imageView2.setOnClickListener {
+//            notifyScreenshot()
+//            _binding.viewPager2.adapter?.notifyDataSetChanged()
+//            Log.e("zhangxiaodong", "11111111111111111111")
+//
+//        }
+//
+//
+//
+//
+//    }
+//
+//    private fun notifyScreenshot(){
+//        CpSdkApiModel.notifyScreenshot("1872460892117196595", object : ICloudSdkListener{
+//            override fun onMessage(p0: Int, p1: String): Boolean {
+//                try {
+//                    val root: JSONObject = JSONObject(p1)
+//                    val data = root.optJSONObject("data")
+//                    val path = data.optString("path")
+//
+//                    val validPath = if (path.isNullOrEmpty()) null else path
+//                    Log.e("zhangxiaodong", validPath)
+//
+//                    // 假设数据为空，模拟没有数据
+//                    _binding.viewPager2.orientation = ViewPager2.ORIENTATION_HORIZONTAL
+//
+//                    // 设置适配器
+//                    val adapter = validPath?.let {
+//                        CustomAdapter(it,
+//                            onImageView5Click = { position ->
+//                                startActivity(Intent(requireContext(), BaseActivity_buy::class.java))
+//
+//                            },
+//                            onImageView48Click = { position ->
+//                                startActivity(Intent(requireContext(), BaseActivity_buy::class.java))
+//
+//                            },
+//                            ontextClick = {
+//                                // TODO:  打开云机
+//                                StartConfig()
+//                            }
+//                        )
+//                    }
+//                    _binding.viewPager2.adapter = adapter
+//
+//                } catch (e: Exception) {
+//                    e.printStackTrace()
+//                }
+//                return false
+//            }
+//
+//
+//        })
+//    }
+//
+//
+//
+//
+//
+//
+//    private fun toggleImageViews() {
+//        if (isImageOne) {
+//            // 只在图片需要变化时才调用 setImageResource
+//            if (_binding.imageView.drawable != resources.getDrawable(R.mipmap.infor_0, null)) {
+//                _binding.imageView.setImageResource(R.mipmap.infor_0)
+//            }
+//            showPopBottom()
+//        } else {
+//            // 只在图片需要变化时才调用 setImageResource
+//            if (_binding.imageView.drawable != resources.getDrawable(R.mipmap.infor_1, null)) {
+//                _binding.imageView.setImageResource(R.mipmap.infor_1)
+//            }
+//            dismissPopWindow()
+//        }
+//
+//        // 切换标志
+//        isImageOne = !isImageOne
+//    }
+//
+//    @SuppressLint("ClickableViewAccessibility")
+//    private fun showPopBottom() {
+//        if (popWindow == null) {
+//            popWindow = CustomPopWindow.PopupWindowBuilder(context)
+//                .setView(R.layout.popup_layout)
+//                .setFocusable(true)
+//                .setOutsideTouchable(false)
+//                .setIgnoreCheekPress(true)
+//                .setTouchIntercepter { _, _ ->
+//                    _binding.imageView.setImageResource(R.mipmap.infor_1)
+//                    dismissPopWindow()
+//                    false // 让事件继续传递
+//                }
+//                .setOnDissmissListener {
+//                    _binding.imageView.setImageResource(R.mipmap.infor_1)
+//                }
+//                .create()
+//        }
+//
+//        // 显示弹窗
+//        popWindow?.showAsDropDown(_binding.textView, 0, 10)
+//    }
+//
+//    private fun dismissPopWindow() {
+//        _binding.root.setOnTouchListener(null)
+//        popWindow?.dissmiss()
+//        popWindow = null
+//    }
+//
+//    override fun onDestroyView() {
+//        super.onDestroyView()
+//        dismissPopWindow()
+//    }
+//
+//    private fun StartConfig() {
+//
+////        设置悬浮窗UI
+//        val floatUIConfig = FloatUIConfig()
+//
+////        自定义浮窗按钮默认显示位置,从左上角 0，0 坐标开始算
+//        val floatIconResId = intArrayOf(R.mipmap.about_1, R.mipmap.about_1, R.mipmap.about_1)
+//        floatUIConfig.floatBtnNetRTTImgResId = floatIconResId
+////        自定义浮窗按钮默认显示位置,从左上角 0，0 坐标开始算
+//        val floatIconLocation = intArrayOf(-20, 300)
+//        floatUIConfig.floatIconLocation = floatIconLocation
+//
+//
+//        floatUIConfig.floatMenuLayoutResId = R.layout.unisdk_layout_cloudplay_phone_menu_default;
+//
+//
+//
+////        启动云机
+//        val startConfig = StartConfig.Builder()
+//            .setToken(AppConst.TOKEN)
+//            .setKey(AppConst.SECRET)
+//            .setUserId("1859847902663794690") // 真实用户标识id，一般由客户上层对接登录后获得唯一标识身份
+//            .setUserPhoneId("1872460892117196595") // 商户用户设备ID，由客户上层通过server2server分配给真实用户云机后的数据
+//            .setOrientation(AppConst.ORIENTATION) // 当前启动串流窗口画面是模屏还是竖屏状态
+//            .setQueue(AppConst.QUEUE) // 设置当前启动云机是排队还是普通模式
+//            .customizeFloatUiConfig(floatUIConfig)
+//            .setScreenshotInterval(10)//截图默认刷新时间 单位秒
+//
+//            .setListener(object : ICloudSdkListener { // 确保使用 ICloudSdkListener 接口
+//                override fun onMessage(code: Int, json: String): Boolean {
+//                    Log.d("StartConfig", "接收到消息，code: $code，json: $json") // 输出接收到的消息
+//
+//                    if (TextUtils.isEmpty(json)) {
+//                        Log.e("StartConfig", "返回的 JSON 为空")
+//                        return false
+//                    }
+//                    try {
+//                        val jsonObject = JSONObject(json)
+//                        val action = jsonObject.optString(ICloudSdkListener.RESP_KEY_ACTION)
+//                        val message = jsonObject.optString(ICloudSdkListener.RESP_KEY_MESSAGE)
+//                        val status = jsonObject.optInt(ICloudSdkListener.RESP_KEY_STATUS)
+//                        Log.e("zhangxiaodongaction", action.toString())
+//
+//                        // 截图定时更新
+//                        if (ICloudSdkListener.ACTION_SCREENSHOT_UPDATE == action) {
+//                            val path = jsonObject.optString("path")
+//                            val deviceId = jsonObject.optString("deviceId")
+//
+//                            Log.e("zhangxiaodong111", path.toString())
+//
+//                            Log.d("StartConfig", "截图更新，图片路径: $path，设备ID: $deviceId")
+//                            return true
+//                        }
+//
+//                        Log.d(
+//                            "StartConfig",
+//                            "解析消息，action: $action, message: $message, status: $status"
+//                        )
+//
+//                        // 处理启动成功
+//                        if (ICloudSdkListener.ACTION_LAUNCH_SUCCESS == action) {
+//                            Log.d("StartConfig", "启动成功，action: $action")
+//                            return true
+//                        }
+//
+//                        // 处理切换云机
+//                        if (ICloudSdkListener.ACTION_CHANGE_PHONE == action) {
+//                            val changeToPos = jsonObject.optInt("position")
+//                            Log.d("StartConfig", "切换云机，目标位置: $changeToPos")
+//                            return true
+//                        }
+//
+//                        // 处理上传本地应用
+//                        if (ICloudSdkListener.ACTION_UPLOAD_LOCAL_APP == action) {
+//                            val respStatus = jsonObject.optString(ICloudSdkListener.RESP_KEY_STATUS)
+//                            Log.d("StartConfig", "上传本地应用，返回状态: $respStatus")
+//                            return true
+//                        }
+//
+//
+//
+//                        // 处理用户权限
+//                        if (ICloudSdkListener.ACTION_USER_PERMISSION == action) {
+//                            Log.d("StartConfig", "需要获取储存权限")
+//                            return true
+//                        }
+//
+//                    } catch (e: JSONException) {
+//                        Log.e("StartConfig", "JSON解析异常：${e.message}")
+//                        e.printStackTrace()
+//                    }
+//                    return false
+//                }
+//
+//                override fun onMenuClick(context: Context?, v: View): Boolean {
+//                    Log.d("StartConfig", "菜单点击事件，context: $context, view: $v")
+//                    return false
+//                }
+//            })
+//            .create()
+//
+//        // 启动云机SDK
+//        Log.d("StartConfig", "启动云机SDK")
+//        CpSdkApiModel.start(requireContext(), startConfig)
+//    }
+//
+//
+//}
+//
+//

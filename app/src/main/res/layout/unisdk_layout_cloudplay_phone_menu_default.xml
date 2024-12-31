@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/sq_cloudplay_ctrl_panel_layout_menu_root"
+    android:layout_width="@dimen/unisdk_dp_340"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="@dimen/unisdk_dp_10"
+    android:layout_marginTop="@dimen/unisdk_dp_30"
+    android:layout_marginEnd="@dimen/unisdk_dp_10"
+    android:layout_marginBottom="@dimen/unisdk_dp_30"
+    android:background="@drawable/unisdk_cloudplay_phone_menu_bg"
+    android:clickable="true"
+    android:focusable="true"
+    android:minHeight="@dimen/unisdk_dp_100"
+    android:orientation="vertical"
+    skin:enable="true">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/unisdk_dp_15"
+                android:layout_marginBottom="@dimen/unisdk_dp_15">
+
+                <TextView
+                    android:id="@id/sq_cloudplay_ctrl_panel_btn_showrtt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/unisdk_dp_15"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/unisdk_ic_hook_cloudplay_rtt"
+                    android:drawablePadding="@dimen/unisdk_dp_5"
+                    android:gravity="center|left"
+                    android:minEms="3"
+                    android:textColor="@color/unisdk_layout_cloudplay_phone_menu_showrtt_text"
+                    android:textSize="@dimen/unisdk_sp_12"
+                    skin:enable="true"
+                    tools:text="60fps" />
+
+                <TextView
+                    android:id="@+id/sq_cloudplay_ctrl_panel_btn_mute"
+                    android:layout_width="@dimen/unisdk_dp_80"
+                    android:layout_height="@dimen/unisdk_dp_40"
+                    android:layout_marginRight="@dimen/unisdk_dp_15"
+                    android:background="@drawable/unisdk_cloudplay_phone_menu_mute_bg"
+                    android:drawableLeft="@drawable/unisdk_cloudplay_phone_menu_mute"
+                    android:drawablePadding="@dimen/unisdk_dp_5"
+                    android:gravity="center"
+                    android:minEms="3"
+                    android:paddingStart="@dimen/unisdk_dp_10"
+                    android:text="@string/unisdk_menu_mute"
+                    android:textColor="@color/unisdk_layout_cloudplay_phone_menu_mute_text"
+                    android:textSize="@dimen/unisdk_sp_12"
+                    skin:enable="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/unisdk_dp_72"
+                android:layout_marginStart="@dimen/unisdk_dp_15"
+                android:layout_marginEnd="@dimen/unisdk_dp_15"
+                android:layout_marginBottom="@dimen/unisdk_dp_15"
+                android:background="@drawable/unisdk_phone_cloudplay_quality_bg"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@id/sq_cloudplay_ctrl_panel_sec_profile_high"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableBottom="@drawable/unisdk_cloudplay_phone_menu_quality_text"
+                    android:drawablePadding="@dimen/unisdk_dp_5"
+                    android:gravity="center"
+                    android:text="@string/unisdk_menu_phone_hd"
+                    android:textColor="@color/unisdk_cloudplay_phone_menu_quality_text"
+                    android:textSize="@dimen/unisdk_sp_14" />
+
+                <TextView
+                    android:id="@id/sq_cloudplay_ctrl_panel_sec_profile_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableBottom="@drawable/unisdk_cloudplay_phone_menu_quality_text"
+                    android:drawablePadding="@dimen/unisdk_dp_5"
+                    android:gravity="center"
+                    android:text="@string/unisdk_menu_phone_sd"
+                    android:textColor="@color/unisdk_cloudplay_phone_menu_quality_text"
+                    android:textSize="@dimen/unisdk_sp_14" />
+
+                <TextView
+                    android:id="@id/sq_cloudplay_ctrl_panel_sec_profile_speed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableBottom="@drawable/unisdk_cloudplay_phone_menu_quality_text"
+                    android:drawablePadding="@dimen/unisdk_dp_5"
+                    android:gravity="center"
+                    android:text="@string/unisdk_menu_phone_fluency"
+                    android:textColor="@color/unisdk_cloudplay_phone_menu_quality_text"
+                    android:textSize="@dimen/unisdk_sp_14" />
+
+                <TextView
+                    android:id="@id/sq_cloudplay_ctrl_panel_sec_profile_auto"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableBottom="@drawable/unisdk_cloudplay_phone_menu_quality_text"
+                    android:drawablePadding="@dimen/unisdk_dp_5"
+                    android:gravity="center"
+                    android:text="@string/unisdk_menu_phone_auto"
+                    android:textColor="@color/unisdk_cloudplay_phone_menu_quality_text"
+                    android:textSize="@dimen/unisdk_sp_14" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/sq_cloudplay_ctrl_panel_btn_upload"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/unisdk_dp_52"
+                android:layout_marginStart="@dimen/unisdk_dp_15"
+                android:layout_marginEnd="@dimen/unisdk_dp_15"
+                android:layout_marginBottom="@dimen/unisdk_dp_15"
+                android:background="@drawable/unisdk_phone_cloudplay_quality_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/unisdk_dp_15"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="@string/unisdk_menu_upload_1"
+                    android:textColor="@color/unisdk_layout_cloudplay_phone_upload_text_1"
+                    android:textSize="@dimen/unisdk_sp_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/unisdk_dp_15"
+                    android:drawableEnd="@mipmap/unisdk_ic_phone_upload"
+                    android:drawablePadding="@dimen/unisdk_dp_5"
+                    android:gravity="center|left"
+                    android:text="@string/unisdk_menu_upload_2"
+                    android:textColor="@color/unisdk_layout_cloudplay_phone_upload_text_2"
+                    android:textSize="@dimen/unisdk_sp_12" />
+            </LinearLayout>
+
+            <GridLayout
+                android:id="@+id/sq_cloudplay_phone_menu_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/unisdk_dp_15"
+                android:layout_marginEnd="@dimen/unisdk_dp_15"
+                android:alignmentMode="alignMargins"
+                android:background="@drawable/unisdk_phone_cloudplay_container_bg"
+                android:columnCount="4"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/unisdk_dp_15"
+                android:paddingBottom="@dimen/unisdk_dp_15"
+                skin:enable="true">
+
+<!--                <TextView-->
+<!--                    android:id="@id/sq_cloudplay_ctrl_panel_btn_changecloudphone"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_rowWeight="1"-->
+<!--                    android:layout_columnWeight="1"-->
+<!--                    android:drawableTop="@mipmap/unisdk_ic_phone_cloudplay_changephone"-->
+<!--                    android:gravity="center"-->
+<!--                    android:minEms="3"-->
+<!--                    android:paddingTop="@dimen/unisdk_dp_5"-->
+<!--                    android:paddingBottom="@dimen/unisdk_dp_5"-->
+<!--                    android:text="@string/unisdk_menu_cloudplay_changephone"-->
+<!--                    android:textColor="@color/unisdk_layout_cloudplay_phone_menu_container_text"-->
+<!--                    android:textSize="@dimen/unisdk_sp_12"-->
+<!--                    skin:enable="true" />-->
+
+                <TextView
+                    android:id="@id/sq_cloudplay_ctrl_panel_btn_sys_nav_bar"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:drawableTop="@drawable/unisdk_ic_phone_cloudplay_sys_nav_bar"
+                    android:gravity="center"
+                    android:minEms="3"
+                    android:paddingTop="@dimen/unisdk_dp_5"
+                    android:paddingBottom="@dimen/unisdk_dp_5"
+                    android:text="@string/unisdk_menu_cloudplay_sys_bar"
+                    android:textColor="@color/unisdk_layout_cloudplay_phone_menu_container_text"
+                    android:textSize="@dimen/unisdk_sp_12"
+                    skin:enable="true" />
+
+
+                <TextView
+                    android:id="@id/sq_cloudplay_ctrl_panel_btn_reboot"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:drawableTop="@mipmap/unisdk_ic_phone_cloudplay_reboot"
+                    android:gravity="center"
+                    android:minEms="3"
+                    android:paddingTop="@dimen/unisdk_dp_5"
+                    android:paddingBottom="@dimen/unisdk_dp_5"
+                    android:text="@string/unisdk_ui_cloudplay_reboot"
+                    android:textColor="@color/unisdk_layout_cloudplay_phone_menu_container_text"
+                    android:textSize="@dimen/unisdk_sp_12"
+                    skin:enable="true" />
+
+<!--                <TextView-->
+<!--                    android:id="@id/sq_cloudplay_ctrl_panel_btn_samescreen"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_rowWeight="1"-->
+<!--                    android:layout_columnWeight="1"-->
+<!--                    android:drawableTop="@mipmap/unisdk_ic_phone_cloudplay_same_screen"-->
+<!--                    android:gravity="center"-->
+<!--                    android:minEms="3"-->
+<!--                    android:paddingTop="@dimen/unisdk_dp_5"-->
+<!--                    android:paddingBottom="@dimen/unisdk_dp_5"-->
+<!--                    android:text="@string/unisdk_menu_same_screen"-->
+<!--                    android:textColor="@color/unisdk_layout_cloudplay_phone_menu_container_text"-->
+<!--                    android:textSize="@dimen/unisdk_sp_12"-->
+<!--                    skin:enable="true" />-->
+
+                <TextView
+                    android:id="@id/sq_cloudplay_ctrl_panel_btn_desktop"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:drawableTop="@mipmap/unisdk_ic_phone_cloudplay_back_desktop"
+                    android:gravity="center"
+                    android:minEms="3"
+                    android:paddingTop="@dimen/unisdk_dp_5"
+                    android:paddingBottom="@dimen/unisdk_dp_5"
+                    android:text="@string/unisdk_menu_cloudplay_back_desktop"
+                    android:textColor="@color/unisdk_layout_cloudplay_phone_menu_container_text"
+                    android:textSize="@dimen/unisdk_sp_12"
+                    skin:enable="true" />
+
+                <TextView
+                    android:id="@id/sq_cloudplay_ctrl_panel_btn_picture_in_picture"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:drawableTop="@mipmap/unisdk_ic_phone_cloudplay_picture_in_picture"
+                    android:gravity="center"
+                    android:minEms="3"
+                    android:paddingTop="@dimen/unisdk_dp_5"
+                    android:paddingBottom="@dimen/unisdk_dp_5"
+                    android:text="@string/unisdk_menu_pip"
+                    android:textColor="@color/unisdk_layout_cloudplay_phone_menu_container_text"
+                    android:textSize="@dimen/unisdk_sp_12"
+                    skin:enable="true" />
+
+                <TextView
+                    android:id="@id/sq_cloudplay_ctrl_panel_btn_resolution"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:drawableTop="@mipmap/unisdk_ic_phone_cloudplay_quality"
+                    android:gravity="center"
+                    android:minEms="3"
+                    android:paddingTop="@dimen/unisdk_dp_5"
+                    android:paddingBottom="@dimen/unisdk_dp_5"
+                    android:text="@string/unisdk_menu_cloudplay_resolution"
+                    android:textColor="@color/unisdk_layout_cloudplay_phone_menu_container_text"
+                    android:textSize="@dimen/unisdk_sp_12"
+                    skin:enable="true" />
+
+                <TextView
+                    android:id="@id/sq_cloudplay_ctrl_panel_btn_sys_root"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:drawableTop="@mipmap/unisdk_ic_phone_cloudplay_sys_root"
+                    android:gravity="center"
+                    android:minEms="3"
+                    android:paddingTop="@dimen/unisdk_dp_5"
+                    android:paddingBottom="@dimen/unisdk_dp_5"
+                    android:text="@string/unisdk_menu_sys_root"
+                    android:textColor="@color/unisdk_layout_cloudplay_phone_menu_container_text"
+                    android:textSize="@dimen/unisdk_sp_12"
+                    skin:enable="true" />
+
+                <!--todo 以下功能待完善-->
+<!--                <TextView-->
+<!--                    android:id="@id/sq_cloudplay_ctrl_panel_btn_address_book_upload"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_rowWeight="1"-->
+<!--                    android:layout_columnWeight="1"-->
+<!--                    android:drawableTop="@mipmap/unisdk_ic_phone_cloudplay_address_book_upload"-->
+<!--                    android:gravity="center"-->
+<!--                    android:minEms="3"-->
+<!--                    android:paddingTop="@dimen/unisdk_dp_5"-->
+<!--                    android:paddingBottom="@dimen/unisdk_dp_5"-->
+<!--                    android:text="@string/unisdk_menu_address_book_upload"-->
+<!--                    android:textColor="@color/unisdk_layout_cloudplay_phone_menu_container_text"-->
+<!--                    android:textSize="@dimen/unisdk_sp_12"-->
+<!--                    skin:enable="true" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@id/sq_cloudplay_ctrl_panel_btn_mic"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_rowWeight="1"-->
+<!--                    android:layout_columnWeight="1"-->
+<!--                    android:drawableTop="@drawable/unisdk_cloudplay_phone_menu_mic"-->
+<!--                    android:gravity="center"-->
+<!--                    android:minEms="3"-->
+<!--                    android:paddingTop="@dimen/unisdk_dp_5"-->
+<!--                    android:paddingBottom="@dimen/unisdk_dp_5"-->
+<!--                    android:text="@string/unisdk_menu_mic"-->
+<!--                    android:textColor="@color/unisdk_layout_cloudplay_phone_menu_container_text"-->
+<!--                    android:textSize="@dimen/unisdk_sp_12"-->
+<!--                    skin:enable="true" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@id/sq_cloudplay_ctrl_panel_btn_camera"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_rowWeight="1"-->
+<!--                    android:layout_columnWeight="1"-->
+<!--                    android:drawableTop="@drawable/unisdk_cloudplay_phone_menu_camera"-->
+<!--                    android:gravity="center"-->
+<!--                    android:minEms="3"-->
+<!--                    android:paddingTop="@dimen/unisdk_dp_5"-->
+<!--                    android:paddingBottom="@dimen/unisdk_dp_5"-->
+<!--                    android:text="@string/unisdk_menu_camera"-->
+<!--                    android:textColor="@color/unisdk_layout_cloudplay_phone_menu_container_text"-->
+<!--                    android:textSize="@dimen/unisdk_sp_12"-->
+<!--                    skin:enable="true" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@id/sq_cloudplay_ctrl_panel_btn_location"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_rowWeight="1"-->
+<!--                    android:layout_columnWeight="1"-->
+<!--                    android:drawableTop="@mipmap/unisdk_ic_phone_cloudplay_location"-->
+<!--                    android:gravity="center"-->
+<!--                    android:minEms="3"-->
+<!--                    android:paddingTop="@dimen/unisdk_dp_5"-->
+<!--                    android:paddingBottom="@dimen/unisdk_dp_5"-->
+<!--                    android:text="@string/unisdk_menu_location"-->
+<!--                    android:textColor="@color/unisdk_layout_cloudplay_phone_menu_container_text"-->
+<!--                    android:textSize="@dimen/unisdk_sp_12"-->
+<!--                    skin:enable="true" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@id/sq_cloudplay_ctrl_panel_btn_share"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_rowWeight="1"-->
+<!--                    android:layout_columnWeight="1"-->
+<!--                    android:drawableTop="@mipmap/unisdk_ic_phone_cloudplay_share"-->
+<!--                    android:gravity="center"-->
+<!--                    android:minEms="3"-->
+<!--                    android:paddingTop="@dimen/unisdk_dp_5"-->
+<!--                    android:paddingBottom="@dimen/unisdk_dp_5"-->
+<!--                    android:text="@string/unisdk_menu_share"-->
+<!--                    android:textColor="@color/unisdk_layout_cloudplay_phone_menu_container_text"-->
+<!--                    android:textSize="@dimen/unisdk_sp_12"-->
+<!--                    skin:enable="true" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@id/sq_cloudplay_ctrl_panel_btn_screenshot"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_rowWeight="1"-->
+<!--                    android:layout_columnWeight="1"-->
+<!--                    android:drawableTop="@mipmap/unisdk_ic_phone_cloudplay_screenshot"-->
+<!--                    android:gravity="center"-->
+<!--                    android:minEms="3"-->
+<!--                    android:paddingTop="@dimen/unisdk_dp_5"-->
+<!--                    android:paddingBottom="@dimen/unisdk_dp_5"-->
+<!--                    android:text="@string/unisdk_menu_float_cloud_phone_shot"-->
+<!--                    android:textColor="@color/unisdk_layout_cloudplay_phone_menu_container_text"-->
+<!--                    android:textSize="@dimen/unisdk_sp_12"-->
+<!--                    skin:enable="true" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@id/sq_cloudplay_ctrl_panel_btn_multi_screen"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_rowWeight="1"-->
+<!--                    android:layout_columnWeight="1"-->
+<!--                    android:drawableTop="@mipmap/unisdk_ic_phone_cloudplay_multi_screen"-->
+<!--                    android:gravity="center"-->
+<!--                    android:minEms="3"-->
+<!--                    android:paddingTop="@dimen/unisdk_dp_5"-->
+<!--                    android:paddingBottom="@dimen/unisdk_dp_5"-->
+<!--                    android:text="@string/unisdk_menu_multiscreen_display"-->
+<!--                    android:textColor="@color/unisdk_layout_cloudplay_phone_menu_container_text"-->
+<!--                    android:textSize="@dimen/unisdk_sp_12"-->
+<!--                    skin:enable="true" />-->
+
+
+            </GridLayout>
+
+            <LinearLayout
+                android:id="@+id/sq_cloudplay_hook_menu_container_3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/unisdk_dp_52"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/unisdk_dp_15"
+                android:orientation="horizontal"
+                skin:enable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/unisdk_phone_cloudplay_container_bg"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@id/sq_cloudplay_ctrl_panel_txt_title"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/unisdk_dp_5"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:minEms="3"
+                        android:paddingStart="@dimen/unisdk_dp_10"
+                        android:paddingEnd="@dimen/unisdk_dp_10"
+                        android:textColor="@color/unisdk_layout_cloudplay_phone_menu_container_text"
+                        android:textSize="@dimen/unisdk_sp_12"
+                        skin:enable="true"
+                        tools:text="设备名称" />
+
+                    <!--todo 以下功能待完善-->
+<!--                    <ImageView-->
+<!--                        android:id="@id/sq_cloudplay_ctrl_panel_btn_modifydevicename"-->
+<!--                        android:layout_width="@dimen/unisdk_dp_24"-->
+<!--                        android:layout_height="@dimen/unisdk_dp_24"-->
+<!--                        android:layout_marginEnd="@dimen/unisdk_dp_5"-->
+<!--                        android:src="@mipmap/unisdk_ic_phone_cloudplay_modify_device_name" />-->
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@id/sq_cloudplay_ctrl_panel_btn_holdstreaming"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/unisdk_dp_5"
+                    android:layout_weight="1"
+                    android:background="@drawable/unisdk_phone_cloudplay_container_bg"
+                    android:gravity="center"
+                    android:minEms="3"
+                    android:text="@string/unisdk_menu_cloudplay_phone_exit"
+                    android:textColor="@color/unisdk_layout_cloudplay_phone_menu_container_text"
+                    android:textSize="@dimen/unisdk_sp_12"
+                    skin:enable="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

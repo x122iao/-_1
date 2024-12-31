@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">闪电云手机</string>
+
+
+
+    <string name="url_user">https://shandian.sharepage.tuzhou.net/nc/saas/testSpeedSharePage/index.html#/light_user</string>
+    <string name="url_privacy">https://shandian.sharepage.tuzhou.net/nc/saas/testSpeedSharePage/index.html#/privacy_agree</string>
+    <string name="login_agreement">我已阅读并同意《天翼账号服务与隐私协议》、闪电云加速器《用户协议》与《隐私协议》注册并登录。</string>
+
+
+
+    <string name="admin_lost">管理员丢失</string>
+    <string name="conn_broken">连接中断</string>
+    <string name="conn_fail">连接失败</string>
+    <string name="duplicated_user">重复的用户</string>
+    <string name="invalid_token">无效的令牌</string>
+    <string name="invalid_version">无效的版本</string>
+    <string name="kicked_out">被踢出</string>
+    <string name="launch_app_fail">启动应用失败</string>
+    <string name="service_busy">服务繁忙</string>
+    <string name="service_error">服务错误</string>
+    <string name="unknown_error">未知错误</string>
+    <string name="user_close">用户关闭</string>
+
+
+
+
+    <string name="close">关闭</string>
+
+
+
+    <string name="sq_recharge">续费</string>
+    <string name="sq_refresh">刷新</string>
+    <string name="sq_left_time">剩余时间</string>
+    <string name="sq_my_device">我的设备</string>
+    <string name="sq_buy_cloud_phone">购买云机</string>
+    <string name="sq_cloudui_not_available_device">无可用云机</string>
+    <string name="sq_join_live_room">加入直播间</string>
+    <string name="sq_cloudplay_my_device">我的云机</string>
+
+
+
+</resources>
